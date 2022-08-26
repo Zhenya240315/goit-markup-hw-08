@@ -128,3 +128,116 @@ ul {
 .navigation__list .navigation__link.current {
   color: #2196f3;
 }
+.menu-open{
+  margin-left: auto;
+  padding: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+@media screen and (min-width: 768px) {
+  display: none;
+}
+}
+.mod-close{
+  display: block;
+  margin-left: auto;
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+}
+.mob-menu{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  padding-top: 10px;
+  padding-bottom: 48px;
+background: #FFFFFF;
+top: 0;
+>.container{
+display: flex;
+flex-direction: column;
+height:100%;
+justify-content: space-between;
+overflow: auto;
+}
+}
+.mob-nav-item:not(:last-child){
+  margin-bottom: 32px;
+}
+.nav-mob{
+  margin-left: 25px;
+}
+.mob-nav-link{
+  font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47/40);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #212121;
+text-decoration: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+}
+}
+.mob-contacts{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+.cont-tel{
+font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: calc(32/28);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196F3;
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+      line-height: calc(40/34);
+    }
+}
+.cont-mail{
+ margin-top: 32px;
+  font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height:calc(28/24);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+}
+.menu-soc-mob{
+  display: flex;
+  flex-wrap: wrap;
+}
+.mob-cont-soc{
+  margin-left: 25px;
+}
+.soc-mob{
+  font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22/18);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #2196F3;
+}
+.bord:not(:last-child){
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+  padding-right: 10px;
+}
