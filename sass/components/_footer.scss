@@ -27,7 +27,9 @@
 
 .logo{
   display: flex;
-  justify-content: center;
+  @media screen and (max-width: 1199px) {
+      justify-content: center;
+    }
 }
 .logo__studio {
   color: #ffffff;
@@ -114,7 +116,9 @@
   margin-bottom: 20px;
   color: #ffffff;
   display: flex;
-  justify-content: center;
+  @media screen and (max-width: 1199px) {
+      justify-content: center;
+    }
 }
 
 .networks__link {

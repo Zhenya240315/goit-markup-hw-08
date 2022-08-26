@@ -20,13 +20,16 @@
 }
 
 .block-text {
-  padding: 20px 24px;
+  padding: 20px 24px ;
   border: 1px solid #eeeeee;
   background: #ffffff;
+  flex-grow: 1;
 }
 
 .block-list {
-  width: calc((100% - 60px) / 3);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -34,6 +37,13 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) /2 );
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
 }
 
 .block-list-wrap {
