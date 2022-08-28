@@ -29,7 +29,7 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="" class="navigation__link current">Студия</a>
+              <a href="./index.html" class="navigation__link current">Студия</a>
             </li>
             <li class="navigation__item">
               <a href="./portfolio.html" class="navigation__link">Портфолио</a>
@@ -50,19 +50,18 @@
             ><svg class="contacts__icon" width="12" height="16">
               <use href="./images/icons.svg#icon-smarthone"></use>
             </svg>
-            +38 096 111 11 11</a
-          >
+            +38 096 111 11 11</a>
         </div>
-        <!-- 11111 -->
-        <button type="button" class="menu-open" >
+      
+        <button type="button" class="menu-open"menu-open >
           <svg class="menu-icon-open" width="40" height="40">
             <use href="./images/icons.svg#icon-open_navigator"></use>
           </svg>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden">
         <div class="container">
         <div class="nav-mob-wrap">
-           <button type="button" class="mod-close" menu-modal-close>
+           <button type="button" class="mod-close" mod-close>
           <svg class="mod-icon-close" width="40" height="40">
             <use href="./images/icons.svg#icon-close_navigator"></use>
           </svg>
@@ -70,7 +69,7 @@
 <nav class="nav-mob">
           <ul class="mob-nav-list">
             <li class="mob-nav-item">
-              <a href="" class="mob-nav-link">Студия</a>
+              <a href="./index.html" class="mob-nav-link">Студия</a>
             </li>
             <li class="mob-nav-item">
               <a href="./portfolio.html" class="mob-nav-link">Портфолио</a>
@@ -155,6 +154,8 @@
           <ul class="work-image">
             <li class="work-image-jpg">
               <img
+              srcset="./images/box1.jpg 1x, 
+              ./images/box1-desk-2x.jpg 2x"
                 src="./images/box1.jpg"
                 alt="img1"
                 width="370"
@@ -164,6 +165,8 @@
             </li>
             <li class="work-image-jpg">
               <img
+              srcset="./images/box2.jpg 1x, 
+              ./images/box2-desk-2x.jpg 2x"
                 src="./images/box2.jpg"
                 alt="img2"
                 width="370"
@@ -173,6 +176,8 @@
             </li>
             <li class="work-image-jpg">
               <img
+              srcset="./images/box3.jpg 1x, 
+              ./images/box3-desk-2x.jpg 2x"
                 src="./images/box3.jpg"
                 alt="img3"
                 width="370"
@@ -189,11 +194,25 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
+
+              <picture>
+                <source 
+                srcset="./images/img1.jpg 1x, 
+              ./images/igor-desk-2x.jpg 2x"
+              media="(min-width:1200px)"/>
+              <source 
+                srcset="./images/igor-tab-1x.jpg.jpg 1x, 
+              ./images/igor-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+                <source 
+                srcset="./images/igor-mob-1x.jpg 1x, 
+              ./images/igor-mob-2x.jpg 2x"
+              media="(max-width:768px)"/>
               <img
-                src="./images/img1.jpg"
+                src="./images/igor-mob-1x.jpg"
                 alt="фото Игорь Демьяненко"
-                width="270"
               />
+              </picture>
               <h3 class="team-name">Игорь Демьяненко</h3>
               <p class="team-work-position" lang="en">Product Designer</p>
               <ul class="socials">
@@ -228,11 +247,25 @@
               </ul>
             </li>
             <li class="team-item">
+              <picture>
+                <source 
+                srcset="./images/img2.jpg 1x, 
+              ./images/olga-desk-2x.jpg 2x"
+              media="(min-width:1200px)"/>
+              <source 
+                srcset="./images/olga-tab-1x.jpg 1x, 
+              ./images/olga-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+                <source 
+                srcset="./images/olga-mob-1x.jpg 1x, 
+              ./images/olga-mob-2x.jpg 2x"
+              media="(max-width:768px)"/>
               <img
-                src="./images/img2.jpg"
+                src="./images/olga-mob-1x.jpg"
                 alt="фото Ольга Репина"
-                width="270"
               />
+              </picture>
+
               <h3 class="team-name">Ольга Репина</h3>
               <p class="team-work-position" lang="en">Frontend Developer</p>
               <ul class="socials">
@@ -267,11 +300,25 @@
               </ul>
             </li>
             <li class="team-item">
+              <picture>
+                <source 
+                srcset="./images/img3.jpg 1x, 
+              ./images/mikola-desk-2x.jpg 2x"
+              media="(min-width:1200px)"/>
+              <source 
+                srcset="./images/mikola-tab-1x.jpg 1x, 
+              ./images/mikola-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+                <source 
+                srcset="./images/mikola-mob-1x.jpg 1x, 
+              ./images/mikola-mob-2x.jpg 2x"
+              media="(max-width:768px)"/>
               <img
-                src="./images/img3.jpg"
+                src="./images/mikola-mob-1x.jpg"
                 alt="фото Николай Тарасов"
-                width="270"
               />
+              </picture>
+              
               <h3 class="team-name">Николай Тарасов</h3>
               <p class="team-work-position" lang="en">Marketing</p>
               <ul class="socials">
@@ -306,11 +353,24 @@
               </ul>
             </li>
             <li class="team-item">
+              <picture>
+                <source 
+                srcset="./images/img4.jpg 1x, 
+              ./images/mixail-desk-2x.jpg 2x"
+              media="(min-width:1200px)"/>
+              <source 
+                srcset="./images/mixail-tab-1x.jpg 1x, 
+              ./images/mixail-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+                <source 
+                srcset="./images/mixail-mob-1x.jpg 1x, 
+              ./images/mixail-mob-2x.jpg 2x"
+              media="(max-width:768px)"/>
               <img
-                src="./images/img4.jpg"
+                src="./images/mixail-mob-1x.jpg"
                 alt="фото Михаил Ермаков"
-                width="270"
               />
+              </picture>
               <h3 class="team-name">Михаил Ермаков</h3>
               <p class="team-work-position" lang="en">UI Designer</p>
               <ul class="socials">
@@ -581,5 +641,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -46,7 +46,6 @@ ol {
 
 .container {
   width: 100%;
-  // max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -72,11 +71,13 @@ img {
   max-width: 100%;
   height: auto;
   
-  width: 100%;
 }
 
 body {
   font-family: "Roboto", "Open Sans", sans-serif;
   color: #212121;
   position: relative;
+}
+.no-scroll{
+  overflow: hidden;
 }
